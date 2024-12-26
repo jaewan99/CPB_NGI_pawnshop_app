@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Test server</h1>
+    {% for i in allCustomer %}
+    <tr>
+      <td>{{i.customer_name}}</td>
+      <br />
+    </tr>
+    {% endfor %}
+    <form method="POST" action="{% url 'addCustomer' %}">
+      {% csrf_token %}
+      <p class="mb-0">Customer Name:</p>
+      <input
+        type="text"
+        name="custName"
+        class="form-control"
+        placeholder="Customer Name"
+        required
+      />
+      <input type="submit" class="btn btn-primary" />
+    </form>
+  </body>
+</html>
