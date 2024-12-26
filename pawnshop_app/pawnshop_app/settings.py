@@ -84,10 +84,11 @@ WSGI_APPLICATION = 'pawnshop_app.wsgi.application'
 DATABASES = {
 'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
+        'USER': 'admin',
         'NAME': 'CPB_NGI_pawnshop_app',
-        'PASSWORD': 'BlueCPB123',
-        'HOST': 'localhost',
+        # use password for server app
+        'PASSWORD': "BlueCPB123",
+        'HOST': 'cpb-ngi-pawnshop-app-prototype.czbgknn5amsw.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }	
