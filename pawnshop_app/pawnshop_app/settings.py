@@ -87,7 +87,7 @@ DATABASES = {
         'USER': 'admin',
         'NAME': 'CPB_NGI_pawnshop_app',
         # use password for server app
-        'PASSWORD': "BlueCPB123",
+        'PASSWORD': "",
         'HOST': 'cpb-ngi-pawnshop-app-prototype.czbgknn5amsw.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
     }
