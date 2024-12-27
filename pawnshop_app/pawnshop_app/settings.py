@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'USER': 'root',
         'NAME': 'CPB_NGI_pawnshop_app',
-        'PASSWORD': 'BlueCPB123',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
